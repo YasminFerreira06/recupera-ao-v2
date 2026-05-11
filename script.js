@@ -1,5 +1,18 @@
-const botao = document.getElementById("botao");
+const btn = document.getElementById("btn");
 
-botao.addEventListener("click", () => {
-  alert("Bem-vindo ao seu site moderno!");
+const manobras = [
+  "Kickflip 🛹",
+  "Heelflip 🔥",
+  "360 Flip ⚡",
+  "Impossible 🚀",
+  "Hardflip 💥"
+];
+
+btn.addEventListener("click", () => {
+
+  const random =
+    manobras[Math.floor(Math.random() * manobras.length)];
+
+  alert("Manobra sorteada: " + random);
+
 });
